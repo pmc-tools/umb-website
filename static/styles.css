@@ -28,12 +28,20 @@ h1 {
 
 code {
 	display: inline-block;
+}
+
+code, .code {
 	font-family: "Ubuntu Mono", monospace;
 	font-size: 10pt;
 	background-color: #f7f7f7;
 	padding: 3px;
 	border: 1px solid #afafaf;
 	border-radius: 5px;
+}
+
+div .code {
+	margin: 10px 0px;
+	padding: 10px;
 }
 
 blockquote, .quote {
@@ -44,6 +52,14 @@ blockquote, .quote {
 	padding: 3px 15px;
 	font-style: italic;
 	transition: all 5s ease;
+}
+
+.code-comment {
+	color: #398d30;
+}
+
+.code-string {
+	color: #892121;
 }
 
 blockquote:hover, .quote:hover {
