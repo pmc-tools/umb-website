@@ -13,15 +13,8 @@
 <article>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
-		<h2>{data.meta.authors}</h2>
-		<p class=date>Published in {data.meta.conference} on {formatDate(data.meta.date)} (DOI: {data.meta.doi})</p>
+		<p class=date>Last updated on {data.meta.date}</p>
 	</hgroup>
-
-	<div class="tags">
-		{#each data.meta.categories as category}
-			<span class="tag">&num;{category}</span>
-		{/each}
-	</div>
 
 	<div class="prose">
 		<data.content />

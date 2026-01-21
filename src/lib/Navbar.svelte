@@ -8,10 +8,12 @@
 	// List of navigation items
 	const navItems = [
 		// { label: "Home", href: "/" },
-		{ label: "About", href: "/about" },
+		// { label: "About", href: "/about" },
 		{ label: "UMBI", href: "/umbi" },
 		// { label: "Publications", href: "/publications" },
-		{ label: "Tools", href: "/tools" }
+		{ label: "Tools", href: "/tools" },
+		{ label: "Observatory", href: "/observatory" },
+		{ label: "Standard", href: "/standard" },
 	];
 
 	// Mobile menu click event handler
