@@ -6,7 +6,7 @@ import Button from '$lib/Button.svelte';
 	<img id=logo src=/logo.svg height=150px />
 	<div>
 	<div id=header-text>
-	<h2>One MDP format to rule them all.</h2>
+	<h2>One Markov Model format to rule them all.</h2>
 	<h4>Simple. Supported. <span class=yellow>Open.</span></h4>
 	</div>
 	</div>
