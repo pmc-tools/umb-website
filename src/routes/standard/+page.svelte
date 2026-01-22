@@ -30,8 +30,9 @@
 <input
 	type=text
 	id="search-bar"
+	class="bi bi-search"
 	placeholder="Search for a standard..."
-	bind:value={searchQuery}
+	bind:value={$searchQuery}
 >
 	<ul class="standards">
 		{#each data.standards as standard}

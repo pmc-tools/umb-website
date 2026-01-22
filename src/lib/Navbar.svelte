@@ -214,7 +214,7 @@ nav {
 	color: #191919;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 867px) {
 	#logo-mobile {
 		display: none;
 	}
