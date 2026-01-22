@@ -54,12 +54,21 @@ blockquote, .quote {
 	transition: all 5s ease;
 }
 
-.code-comment {
+.code-comment, .comment {
 	color: #398d30;
 }
 
-.code-string {
+.code-string, .string {
 	color: #892121;
+}
+
+.code-keyword, .keyword {
+	color: #1f5b89;
+}
+
+.code-function, .function {
+	color: #442189;
+	font-style: italic;
 }
 
 blockquote:hover, .quote:hover {
@@ -69,4 +78,13 @@ blockquote:hover, .quote:hover {
 .content {
 	padding: 20px 20%;
 	min-height: 700px;
+}
+
+pre, code {
+	word-break: break-all !important;
+}
+
+pre {
+	display: block;
+	width: 100%;
 }

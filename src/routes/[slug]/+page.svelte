@@ -33,7 +33,7 @@
 		h2, .subtitle {
 				font-size: 15pt;
 				font-style: italic;
-				color: #ffad69;
+				color: #ffe169;
 		}
 
 		h1 + p {
@@ -52,8 +52,8 @@
 			.tag {
 				padding: 5px 8px;
 				color: black;
-				background-color: #ff8018;
-				border: 1px solid #ff8018;
+				background-color: #ffd118;
+				border: 1px solid #ffd118;
 				transition: all 2s ease;
 			}
 
