@@ -9,7 +9,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
-
+<div class=content>
 <article>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
@@ -20,7 +20,7 @@
 		<data.content />
 	</div>
 </article>
-
+</div>
 <style>
 	article {
 		max-inline-size: var(--size-content-3);
