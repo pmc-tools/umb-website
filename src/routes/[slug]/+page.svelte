@@ -10,10 +10,8 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 <div class=content>
-<a href=standard>&lt; Back to Standards</a>
 <article>
 	<hgroup>
-		<h1>{data.meta.title}</h1>
 		<p class=date>Last updated on {data.meta.date}</p>
 	</hgroup>
 

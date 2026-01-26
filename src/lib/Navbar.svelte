@@ -13,7 +13,7 @@
 		// { label: "Publications", href: "/publications" },
 		{ label: "Tools", href: "/tools" },
 		{ label: "Observatory", href: "/observatory" },
-		{ label: "Standard", href: "/standard" },
+		{ label: "Standard", href: "/spec" },
 	];
 
 	// Mobile menu click event handler
