@@ -19,6 +19,8 @@
 	// Mobile menu click event handler
 	const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
 
+	const closeMobileMenu = () => (showMobileMenu = false);
+
 	// Media match query handler
 	const mediaQueryHandler = e => {
 		// Reset mobile state
@@ -45,10 +47,10 @@
 		</div>
 		<ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
 			<!-- Do not show the home button when not in mobile -->
-			<li id=logo-mobile><a href=/>Home</a></li>
+			<li id=logo-mobile><a href=/ on:click={closeMobileMenu()}>Home</a></li>
 			{#each navItems as item}
 				<li>
-					<a href={item.href}>{item.label}</a>
+					<a href={item.href} on:click={closeMobileMenu()}>{item.label}</a>
 				</li>
 			{/each}
 		</ul>

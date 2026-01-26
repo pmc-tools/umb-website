@@ -4,10 +4,10 @@
 	import { writable } from 'svelte/store';
 
 	let { data } = $props();
-	let searchQuery = writable(''); // Store for search query
+	var searchQuery = writable(''); // Store for search query
 
 	// Creating a derived store for filtered standards
-	let filteredStandards = derived(searchQuery, $searchQuery => {
+	var filteredStandards = derived(searchQuery, $searchQuery => {
 		return data.standards.filter(standard =>
 			standard.title.toString().toLowerCase().includes($searchQuery.toString().toLowerCase()) ||
 			standard.description.toString().toLowerCase().includes($searchQuery.toString().toLowerCase())
@@ -26,6 +26,8 @@
 	}
 </script>
 <div class=content>
+<h1>The UMB Standard</h1>
+<p>Included below are the sections of the UMB file format standard.</p>
 <section>
 <input
 	type=text
@@ -52,7 +54,7 @@
 	}
 
 	#search-bar {
-		padding: 5px;
+		padding: 8px;
 		border: none;
 		border-bottom: 1px solid #aaa;
 		color: #555;
