@@ -1,9 +1,10 @@
 <script>
 import Button from '$lib/Button.svelte';
+import base from '$app/paths';
 </script>
 
 <div id=banner>
-	<img id=logo src=/logo.svg height=150px />
+	<img id=logo src="{base}/logo.svg" height=150px />
 	<div>
 	<div id=header-text>
 	<h2>One Markov Model format to rule them all.</h2>
@@ -23,7 +24,7 @@ import Button from '$lib/Button.svelte';
 	background-color: black;
 	color: white;
 	text-align: center;
-	background-image: url('/banner.jpg');
+	background-image: url("{base}/banner.jpg");
 	background-size: cover;
 	display: flex;
 	flex-direction: column;

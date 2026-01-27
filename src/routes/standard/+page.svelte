@@ -2,6 +2,7 @@
 	import { formatDate } from '$lib/utils';
 	import { derived } from 'svelte/store';
 	import { writable } from 'svelte/store';
+	import base from '$app/paths';
 
 	let { data } = $props();
 	var searchQuery = writable(''); // Store for search query
@@ -39,7 +40,7 @@
 	<ul class="standards">
 		{#each data.standards as standard}
 <li class="standard">
-					<a href={standard.slug} class="title" >{highlightText(standard.title, searchQuery)}</a>
+					<a href="{base}/{standard.slug}" class="title" >{highlightText(standard.title, searchQuery)}</a>
 					<p class="date">{formatDate(standard.date)}</p>
 					<p class="description" >{highlightText(standard.description, searchQuery)}</p>
 				</li>

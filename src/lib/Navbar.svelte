@@ -1,6 +1,7 @@
 
 <script>
 	import { onMount } from "svelte";
+	import base from '$app/paths';
 
 	// Show mobile icon and display menu
 	let showMobileMenu = false;
@@ -50,7 +51,7 @@
 			<li id=logo-mobile><a href=/ on:click={closeMobileMenu()}>Home</a></li>
 			{#each navItems as item}
 				<li>
-					<a href={item.href} on:click={closeMobileMenu()}>{item.label}</a>
+					<a href="{base}{item.href}" on:click={closeMobileMenu()}>{item.label}</a>
 				</li>
 			{/each}
 		</ul>
