@@ -30,8 +30,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			// The BASE_PATH env variable is not working so i set it manually
-			base: 'https://pmc-tools.github.io/umb-website/'
+			base: process.env.BASE_PATH
 		}
 	}
 };
