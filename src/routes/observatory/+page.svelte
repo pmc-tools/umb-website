@@ -17,7 +17,7 @@ The docker container has the following elements:
 	<li>A Jupyter notebook, bound to port 8000.</li>
 </ol>
 
-You can either build the Docker image yourself from <a href=https://github.com/pmc-tools/umb-observatory>the GitHub repository</a> or you can pull it from <a href=ghcr.io/pmc-tools/docker>ghcr.io</a>:
+You can either build the Docker image yourself from <a href=https://github.com/pmc-tools/umb-observatory>the GitHub repository</a> or you can pull it from <a href=https://ghcr.io/pmc-tools/docker>ghcr.io</a>:
 
 <div class=code>
 docker pull ghcr.io/pmc-tools/docker:main

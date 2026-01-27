@@ -4,7 +4,7 @@
 	import Footer from '$lib/Footer.svelte';
 	let { children } = $props();
 
-	export const prerender = true;
+	// export const prerender = true;
 </script>
 
 <svelte:head>
