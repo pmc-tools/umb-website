@@ -40,7 +40,7 @@
 	<ul class="standards">
 		{#each data.standards as standard}
 <li class="standard">
-					<a href="{base}/{standard.slug}" class="title" >{highlightText(standard.title, searchQuery)}</a>
+					<a href="{standard.slug}" class="title" >{highlightText(standard.title, searchQuery)}</a>
 					<p class="date">{formatDate(standard.date)}</p>
 					<p class="description" >{highlightText(standard.description, searchQuery)}</p>
 				</li>
