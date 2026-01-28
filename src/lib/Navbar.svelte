@@ -42,7 +42,7 @@
 
 <nav>
 	<div class="inner">
-		<div id=logo-container><img src="logo_flat.svg" height=30px id=logo-icon /><a id=logo href=/umb>UMB</a></div>
+		<div id=logo-container><img src="logo_flat.svg" height=30px id=logo-icon /><a id=logo href=/>UMB</a></div>
 		<div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
 			<div class="middle-line"></div>
 		</div>
