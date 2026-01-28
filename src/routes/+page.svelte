@@ -2,7 +2,7 @@
 	import Banner from '$lib/Banner.svelte';
 	import Button from '$lib/Button.svelte';
 	import ToolLogos from '$lib/ToolLogos.svelte';
-	import base from '$app/paths';
+
 </script>
 
 <Banner/>

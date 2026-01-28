@@ -2,7 +2,7 @@
 	import { formatDate } from '$lib/utils';
 	import { derived } from 'svelte/store';
 	import { writable } from 'svelte/store';
-	import base from '$app/paths';
+
 
 	let { data } = $props();
 	var searchQuery = writable(''); // Store for search query

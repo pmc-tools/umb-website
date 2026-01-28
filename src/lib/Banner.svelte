@@ -1,6 +1,6 @@
 <script>
 import Button from '$lib/Button.svelte';
-import base from '$app/paths';
+
 </script>
 
 <div id=banner>
