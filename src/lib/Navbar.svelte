@@ -1,7 +1,7 @@
 
 <script>
 	import { onMount } from "svelte";
-	import base from '$app/paths';
+	import resolve from '$app/paths';
 
 	// Show mobile icon and display menu
 	let showMobileMenu = false;
@@ -10,11 +10,11 @@
 	const navItems = [
 		// { label: "Home", href: "/" },
 		// { label: "About", href: "/about" },
-		{ label: "UMBI", href: "/umbi" },
+		{ label: "UMBI", href: "umbi" },
 		// { label: "Publications", href: "/publications" },
-		{ label: "Tools", href: "/tools" },
-		{ label: "Observatory", href: "/observatory" },
-		{ label: "Standard", href: "/spec" },
+		{ label: "Tools", href: "tools" },
+		{ label: "Observatory", href: "observatory" },
+		{ label: "Standard", href: "spec" },
 	];
 
 	// Mobile menu click event handler
@@ -42,7 +42,7 @@
 
 <nav>
 	<div class="inner">
-		<div id=logo-container><img src="/logo_flat.svg" height=30px id=logo-icon /><a id=logo href=/>UMB</a></div>
+		<div id=logo-container><img src="logo_flat.svg" height=30px id=logo-icon /><a id=logo href=/umb>UMB</a></div>
 		<div on:click={handleMobileIconClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
 			<div class="middle-line"></div>
 		</div>
@@ -51,7 +51,7 @@
 			<li id=logo-mobile><a href=/ on:click={closeMobileMenu()}>Home</a></li>
 			{#each navItems as item}
 				<li>
-					<a href="{base}{item.href}" on:click={closeMobileMenu()}>{item.label}</a>
+					<a href="{item.href}" on:click={closeMobileMenu()}>{item.label}</a>
 				</li>
 			{/each}
 		</ul>

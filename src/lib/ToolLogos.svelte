@@ -1,8 +1,8 @@
 
 <div class=logos>
-<img src='/toolLogos/modest.svg' />
-<img src='/toolLogos/storm.svg' />
-<img src='/toolLogos/prism.svg' />
+<img src='toolLogos/modest.svg' />
+<img src='toolLogos/storm.svg' />
+<img src='toolLogos/prism.svg' />
 </div>
 
 <style>

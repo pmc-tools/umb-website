@@ -2,7 +2,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/Navbar.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import base from '$app/paths';
+	import resolve from '$app/paths';
 
 	let { children } = $props();
 
@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<link rel=stylesheet href="{base}/styles.css" />
+	<link rel=stylesheet href="styles.css" />
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
